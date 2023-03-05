@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+h1{
+    color: blueviolet;
+    font-size: 100;
+    font-family: cursive;
+    text-align: center;
+}
+
+h1:hover{
+margin: 0 auto;
+color: white;
+}
+
+#intro{
+   font-size: 30;
+   display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+iframe{
+    height: 70vh;
+    width: 100%;
+    border-width: 1px;
+}
+
+p{
+    margin: 100;
+    font-size:30px;
+    justify-content: space-evenly;
+    padding: 50;
+}
+
+.preggy{
+   background-color: beige;
+    padding: 50;
+}
+
+.navlist{
+    display: flex;
+    font-size: 20px;
+    background-color: blueviolet;
+    margin: 5px;
+    color: whitesmoke;
+    flex-direction: row;
+    text-align: right;
+    justify-content: space-between;  
+}
+
+a{
+    text-decoration: none;
+    text-transform: none;
+    list-style: none;
+}

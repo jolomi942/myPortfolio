@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Prediction</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="navigation">
+          <p></p>
+          <h1>
+            🌤<br />
+            Currently 21º in Tokyo
+          </h1>
+
+          <div class="class">
+            <h2>13º <strong> / 23º</strong></h2>
+          </div>
+
+          <ul class="firstUl">
+            <div class="tomorrow">
+              <p>⛅️ <strong> Tomorrow </strong></p>
+              10º /<strong>22º</strong>
+            </div>
+
+            <div class="saturday">
+              <p>
+                <strong> ⛈ Saturday </strong>
+              </p>
+              15º /<strong>17º</strong>
+            </div>
+
+            <div class="sunday">
+              <p>🌩 <strong> Sunday</strong></p>
+              25º /<strong>28º</strong>
+            </div>
+          </ul>
+          <p>
+            <button class="button1">Change city</button>
+          </p>
+          <hr />
+          <p class="esther">Coded by Esther Jolomi</p>
+        </div>
+
+        <div class="mainContainer">
+          <ul class="navlist">
+            <li>
+              <a
+                href="file:///Users/mac/Desktop/SheCodes/project1.html#"
+                class="link"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="https://map.worldweatheronline.com/" class="link"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
+                class="link"
+                >Contact us</a
+              >
+            </li>
+          </ul>
+          <hr />
+          <img
+            class="img1"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/060/684/original/globe-png-26.png?1672347398"
+            alt="World Globe"
+          />
+
+          <small>
+            <a href="https://en.wikipedia.org/wiki/Weather_forecasting">
+              <button class="secondB">Discover</button>
+            </a>
+          </small>
+        </div>
+      </div>
+    </div>
+  </body>
+  <style>
+    body {
+      max-width: 100%;
+      padding: 0%;
+      background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/060/685/original/1775b615718992ee092cb93102190b09.jpeg?1672347581);
+      background-size: cover;
+    }
+    .mainContainer {
+      border-radius: 50px;
+      margin-top: 50px;
+      padding: 20px;
+      margin-bottom: auto;
+      width: 450px;
+      height: 600px;
+      align-items: top;
+      margin-right: 8px;
+      color: white;
+      box-shadow: 10px;
+      border-style: inherit;
+    }
+    .navigation {
+      justify-content: space-between;
+      border-radius: 50px;
+
+      padding: 20px;
+
+      margin-bottom: auto;
+      width: 450px;
+      height: 600px;
+      box-shadow: 10px;
+      border-color: antiquewhite;
+      color: black;
+    }
+    .content {
+      display: inline-flex;
+    }
+
+    h2 {
+      font-weight: 300;
+      font-family: "Times New Roman", Times, serif;
+      text-align: left;
+      color: black;
+      font-size: 30px;
+    }
+
+    .secondB {
+      color: black;
+      background: white;
+      padding: 15px 20px;
+      opacity: 0.7;
+      margin: 0 auto;
+      border: 1px solid black;
+      box-shadow: 50px;
+      border-radius: 50%;
+      transition: all 200ms ease-in-out;
+      font-family: Helvetica, sans-serif;
+      font-size: 20px;
+      margin-left: 150px;
+    }
+
+    .secondB:hover {
+      background: black;
+      cursor: pointer;
+      color: white;
+    }
+
+    .navlist {
+      color: black;
+      display: flex;
+      gap: 30px;
+      list-style: none;
+    }
+
+    .img1 {
+      margin: 0 auto;
+      display: flex;
+      height: 400px;
+      width: 600px;
+
+      align-items: center;
+      justify-content: center;
+      margin-top: 50px;
+      margin-bottom: 30px;
+    }
+
+    .link {
+      color: black;
+      text-decoration: none;
+      text-transform: uppercase;
+      display: flex;
+    }
+
+    h1 {
+      color: blue;
+    }
+    h2 {
+      font-weight: lighter;
+      font-size: 32px;
+    }
+    body {
+      text-align: center;
+    }
+    .button1 {
+      color: black;
+      background: white;
+      padding: 15px 20px;
+      opacity: 0.7;
+      margin: 0 auto;
+      border: 1px solid black;
+      box-shadow: 50px;
+      border-radius: 50%;
+      transition: all 200ms ease-in-out;
+      font-family: Helvetica, sans-serif;
+      font-size: 20px;
+    }
+
+    .button1:hover {
+      background: black;
+      cursor: pointer;
+      color: white;
+    }
+
+    .esther {
+      font-family: monospace;
+    }
+    .class {
+      display: flex;
+      margin: 0 auto;
+      border-radius: 10px;
+      transition: all 200ms ease-in-out;
+      font-family: Helvetica, sans-serif;
+      font-size: 20px;
+      padding: 0;
+      max-width: 110px;
+    }
+    ul {
+      padding: 0;
+      margin: 0 auto;
+      margin-left: 150px;
+      align-content: right;
+      max-width: 500px;
+      color: black;
+    }
+    .firstUl {
+      padding: 0;
+      margin: 0 auto;
+      align-items: center;
+      max-width: 500px;
+      color: black;
+    }
+
+    .tomorrow {
+      display: block;
+      border-radius: 10px;
+      transition: all 200ms ease-in-out;
+      font-family: Helvetica, sans-serif;
+      font-size: 20px;
+      opacity: 0.7;
+    }
+
+    .saturday {
+      display: block;
+      margin: 0 auto;
+      border-radius: 10px;
+      transition: all 200ms ease-in-out;
+      font-family: Helvetica, sans-serif;
+      font-size: 20px;
+      opacity: 0.7;
+    }
+    .sunday {
+      display: block;
+      margin: 0 auto;
+      border-radius: 10px;
+      transition: all 200ms ease-in-out;
+      opacity: 0.7;
+      font-family: Helvetica, sans-serif;
+      font-size: 20px;
+    }
+
+    .tomorrow:hover {
+      background: rgb(247, 219, 199);
+      cursor: pointer;
+    }
+
+    .saturday:hover {
+      background: rgb(247, 219, 199);
+      cursor: pointer;
+    }
+
+    .sunday:hover {
+      background: rgb(247, 219, 199);
+      cursor: pointer;
+    }
+  </style>
+  <script>
+    function updateHeading(newheading) {
+      let heading = document.querySelector("h1");
+      heading.innerHTML = newheading;
+    }
+
+    function changeCity() {
+      let city = prompt("what city do you live in?");
+      let temperature = prompt("what temperature is it?");
+
+      if (temperature >= "20ºC") {
+        updateHeading(`🌝<br> Currently ${temperature}ºC, in ${city}`);
+      } else {
+        updateHeading(`☹️<br> Currently ${temperature}ºC in ${city}`);
+      }
+    }
+
+    let changeButton = document.querySelector(".button1");
+    changeButton.addEventListener("click", changeCity);
+  </script>
+</html>

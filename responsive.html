@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <img src="images/sumbo.png" alt="" class="logo" />
+        <nav>
+          <ul id="menu-List">
+            <li><a href="responsive.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="#certificate">Certificates</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <img
+          src="images/coffee6.jpeg"
+          alt=""
+          class="menu-icon"
+          onclick="togglemenu()"
+        />
+      </div>
+      <div class="row">
+        <div class="col-1">
+          <h2>👋 Hi, I am</h2>
+          <h1>Lady Esther</h1>
+          <h4>🇳🇬 Front-end Developer, based in Africa</h4>
+          <p>
+            My interests are in Front End Engineering, <br />
+            and I love to create beautiful and performant <br />
+            products with delightful user experiences Education <br />
+            and certifications. Technical and soft skills.
+          </p>
+          <button type="button">
+            Contact me now
+            <img
+              src="images/d0db51bfb8797366caebdf2a238849f0.jpeg"
+              alt="search icon"
+            />
+          </button>
+        </div>
+        <div class="col-2">
+          <img src="images/estee.png" alt="Esther's photo" class="controller" />
+          <div class="color-box"></div>
+          <div class="add-btn">
+            <img src="images/phone call.png" alt="" />
+            <p><small>Add to cart</small></p>
+          </div>
+        </div>
+      </div>
+
+      <body class="overall">
+        <div class="container">
+          <div><a href="responsive.html"> Back to home</a></div>
+          <div class="about">
+            <h1 class="about-header" id="about">About me</h1>
+          </div>
+          <h3 class="front-end">Front-end Developer from Abuja, Nigeria</h3>
+          <div class="about-paragraphs">
+            <p class="story">
+              I am Esther Jolomi Adeyinka, an Accountant and also a Software
+              Developer. I have served in several organisations as Finance and
+              Admin Officer. In my quest to up-skill, I enrolled in ALX Virtual
+              Assistant program and it has really helped in enhancing my soft
+              and technical skills.
+
+              <br />
+              <br />
+              I am a graduate of EEEI SheTech project on Mobile App development
+              and Website Development with SheCodes Foundation. I am currently
+              undergoing a one year software engineering study at ALX
+            </p>
+            <p class="story">
+              As a highly motivated and conscientious professional with
+              significant years of work experience in Administration,
+              procurement, logistics and finance. I possess efficient and
+              excellent interpersonal skills and works well on own initiative
+              and as part of a team.
+              <br />
+              <br />
+              I thrive under pressure. I have the ability to meet tight
+              deadlines whilst working in a complex multi-cultural environment.
+              I possess the ability to identify and resolve problems with keen
+              attention to details resulting in the effective and accurate
+              delivery of results
+            </p>
+            <div class="nav-link">
+          <div>
+            <button class="contact-link">
+              <a href="images/Esther Jolomi Intern T.docx" class="contact-col"
+                >My Resume</a
+              >
+            </button>
+          </div>
+          <div>
+            <button class="about-link">
+              <a href="about.html" class="about-col">my projects</a>
+            </button>
+          </div>
+        </div>
+          </div>
+        </div>
+        
+      </body>
+
+
+      <div class="container">
+        <h2>👋 My skill</h2>
+        <h1>Front-end developer</h1>
+        <p>🇳🇬 Front-end Developer, based in Africa</p>
+        
+      </div>
+
+      <div>
+        <h1 id="certificate">My Certificates</h1>
+      <div class="cert">
+        <a
+          href="https://www.shecodes.io/certificates/152052c8721f68ecc3e76c39872adc66"
+          ></a
+        >
+        <br />
+        <img
+          src="images/Intro Cert.png"
+          alt="SheCodes Basics Certificate"
+          height="400px"
+          margin="20px"
+        />
+        <a
+          href="https://www.shecodes.io/certificates/2349de9f4ce96b461a1f9e277c09f766"
+          ></a>
+        <img
+          src="images/web dev.png"
+          alt="web development certificate from SheCodes"
+          height="400px"
+          margin="40px"
+        />
+        <br />
+        
+      </div>
+    </div>
+
+      
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/esther-jolomi/"
+          ><img
+            src="images/linkedlin logo.png"
+            alt="linkedlin logo"
+            class="linkedin-color"
+        /></a>
+        <a href="https://www.instagram.com/joyinlola/"
+          ><img
+            src="images/instagram logo.png"
+            alt=" instagram logo"
+            class="instagram-color"
+        /></a>
+        <a href="https://twitter.com/esther_yinks"
+          ><img
+            src="images/twitter logo.png"
+            alt="twitter logo"
+            class="twitter-color"
+        /></a>
+        <a href="https://web.facebook.com/joyinlolaesther"
+          ><img
+            src="images/facebook logo.png"
+            alt="facebook logo"
+            class="facebook-"
+        /></a>
+      </div>
+    </div>
+    <script>
+      let menuList = document.getElementByID("menu-List");
+      menuList.style.maxHeight = "0px";
+      function togglemenu() {
+        if (menuList.style.maxHeight == "0px") {
+          menuList.style.maxHeight == "130px";
+        } else {
+          menuList.style.maxHeight == "130px";
+        }
+      }
+    </script>
+  </body>
+</html>
