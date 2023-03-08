@@ -15,15 +15,15 @@
   <body>
     <div class="container">
       <div class="navbar">
-        <img src="images/sumbo.png" alt="" class="logo" />
+        <img src="images/sumbo.png" alt="sumbo logo" class="logo" />
         <nav>
-          <ul id="menu-List">
+          <ul id="menuList">
             <li><a href="index.html">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#certificate">Certificates</a></li>
             <li><a href="projects.html">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact">contact</a></li>
           </ul>
         </nav>
         <img
@@ -230,7 +230,7 @@
     </div>
 
     <br />
-    <h2 id="contacts">My contacts</h2>
+    <h2 id="contact">My Contacts</h2>
 
     <div class="social-links">
       <a href="https://www.linkedin.com/in/esther-jolomi/"
@@ -259,4 +259,17 @@
       /></a>
     </div>
   </body>
+  <script>
+    let menuList = document.getElementById("menuList");
+    menuList.style.maxHeight = "0px";
+    function togglemenu(){
+
+      if (menuList.style.maxHeight == "0px"){
+        menuList.style.maxHeight = "130px"}
+        else{
+          menuList.style.maxHeight = "0px";
+        }
+      
+    }
+  </script>
 </html>
