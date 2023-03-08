@@ -180,8 +180,8 @@ button:hover {
   margin: 10px;
   cursor: pointer;
   color: burlywood;
- text-align: center;
- justify-content: center;
+  text-align: center;
+  justify-content: center;
 }
 .social-links {
   text-align: center;
@@ -241,14 +241,13 @@ button:hover {
     cursor: pointer;
     display: block;
   }
-.social-links2 img {
-  height: 200px;
-  margin: 10px;
-  cursor: pointer;
-  color: burlywood;
-  width: 200px;
-  
-}
+  .social-links2 img {
+    height: 200px;
+    margin: 10px;
+    cursor: pointer;
+    color: burlywood;
+    width: 200px;
+  }
 
   #menuList {
     overflow: hidden;
@@ -267,12 +266,10 @@ button:hover {
     margin-top: 100px;
     align-items: center;
     display: block;
-    
   }
-  .me{
-  width: 70%;
-}
-
+  .me {
+    width: 70%;
+  }
 
   .color-box {
     transform: translateX(75px);
@@ -366,7 +363,6 @@ a {
 
 .contact-col {
   color: burlywood;
-  
 }
 
 #set-button {
@@ -402,7 +398,7 @@ a {
 .cert {
   display: flex;
   flex-direction: row;
-  
+
   justify-content: space-evenly;
 }
 
@@ -411,7 +407,6 @@ a {
   cursor: pointer;
   color: burlywood;
 }
-.me{
+.me {
   margin: 10px;
-  
 }
