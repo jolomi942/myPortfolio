@@ -4,116 +4,259 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Esther Jolomi: portfolio as a front-end developer</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/yourcode.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
+
   <body>
     <div class="container">
-      <h2>👋 Hi, I am</h2>
-      <h1>Lady Esther</h1>
-      <p>🇳🇬 Front-end Developer, based in Africa</p>
-      <div class="nav-link">
-        <div>
-          <button class="contact-link">
-            <a href="images/Esther Jolomi Intern T.docx" class="contact-col">My Resume</a>
-          </button>
+      <div class="navbar">
+        <img src="images/sumbo.png" alt="" class="logo" />
+        <nav>
+          <ul id="menu-List">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certificate">Certificates</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <img
+          src="images/coffee6.jpeg"
+          alt=""
+          class="menu-icon"
+          onclick="togglemenu()"
+        />
+      </div>
+      <div class="row">
+        <div class="col-1">
+          <h2>👋 Hi, I am</h2>
+          <h1>Lady Esther</h1>
+          <h4>🇳🇬 Front-end Developer, based in Africa</h4>
+          <p>
+            My interests are in Front End Engineering, <br />
+            and I love to create beautiful and performant <br />
+            products with delightful user experiences Education <br />
+            and certifications. Technical and soft skills.
+          </p>
+          <button type="button">Contact me now</button>
         </div>
-        <div>
-          <button class="about-link">
-            <a href="about.html" class="about-col">About me</a>
-          </button>
+        <div class="col-2">
+          <img src="images/estee.png" alt="Esther's photo" class="controller" />
+          <div class="color-box"></div>
         </div>
       </div>
+
+      <div class="container">
+        <div><a href="responsive.html"> Back to home</a></div>
+        <div class="about">
+          <h1 class="about-header" id="about">About me</h1>
+        </div>
+        <h3 class="front-end">Front-end Developer from Abuja, Nigeria</h3>
+        <div class="about-paragraphs">
+          <img src="images/me.png" alt="" height="100px" class="me" />
+          <p class="story">
+            I am Esther Jolomi Adeyinka, an Accountant and also a Software
+            Developer. I have served in several organisations as Finance and
+            Admin Officer. In my quest to up-skill, I enrolled in ALX Virtual
+            Assistant program and it has really helped in enhancing my soft and
+            technical skills.
+
+            <br />
+            <br />
+            I am a graduate of EEEI SheTech project on Mobile App development
+            and Website Development with SheCodes Foundation. I am currently
+            undergoing a one year software engineering study at ALX
+          </p>
+          <p class="story">
+            As a highly motivated and conscientious professional with
+            significant years of work experience in Administration, procurement,
+            logistics and finance. I possess efficient and excellent
+            interpersonal skills and works well on own initiative and as part of
+            a team.
+            <br />
+            <br />
+            I thrive under pressure. I have the ability to meet tight deadlines
+            whilst working in a complex multi-cultural environment. I possess
+            the ability to identify and resolve problems with keen attention to
+            details resulting in the effective and accurate delivery of results
+          </p>
+          <div class="nav-link">
+            <div>
+              <button class="contact-link">
+                <a href="images/Esther Jolomi Intern T.docx" class="contact-col"
+                  >My Resume</a
+                >
+              </button>
+            </div>
+            <div>
+              <button class="about-link">
+                <a href="about.html" class="about-col">my projects</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <br />
+      <br />
+      <div class="text-center">
+        <h2 id="skills">My Skills</h2>
+        <div class="row">
+          <div class="col">
+            <h3>HTML</h3>
+            <img
+              src="images/html5.svg"
+              alt="html image"
+              height="100px"
+              class="skills-images"
+            />
+          </div>
+          <div class="col-6">
+            <h3>CSS</h3>
+            <img
+              src="images/css3-alt.svg"
+              alt="html image"
+              height="100px"
+              class="skills-images"
+            />
+          </div>
+          <div class="col-6">
+            <h3>Javascript</h3>
+            <img
+              src="images/square-js.svg"
+              alt="Javascript image"
+              height="100px"
+              class="skills-images"
+            />
+          </div>
+          <div class="col-6">
+            <h3>React-Native</h3>
+            <img
+              src="images/react.svg"
+              alt="react image"
+              height="100px"
+              class="skills-images"
+            />
+          </div>
+          <div class="col">
+            <h3>GitHub</h3>
+            <img
+              src="images/square-github.svg"
+              alt="github image"
+              height="100px"
+              class="skills-images"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h3>Git</h3>
+            <img
+              src="images/git-alt.svg"
+              alt="git image"
+              height="100px"
+              class="skills-images"
+            />
+          </div>
+          <div class="col-5">
+            <h3>Boostrap</h3>
+            <img
+              src="images/bootstrap.svg"
+              alt="bootstrap image"
+              height="100px"
+              class="skills-images"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="images/visual-removebg-preview.png"
+              alt="vscode icon"
+              height="100px"
+              class="skills-images"
+            />
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+
+      <div class="text-center">
+        <h2 id="certificate" class="cert">My Certificates</h2>
+        <div class="row">
+          <div class="col">
+            
+            <a
+              href="https://www.shecodes.io/certificates/152052c8721f68ecc3e76c39872adc66"
+            ><h3>Intro to coding</h3></a>
+            <img
+              src="images/Intro Cert.png"
+              alt="web development certificate from SheCodes"
+              height="250px"
+            />
+          </div>
+          <div class="col-6">
+            
+            <a
+              href="https://www.shecodes.io/certificates/2349de9f4ce96b461a1f9e277c09f766"
+            ><h3>Web development</h3></a>
+            <img
+              src="images/web dev.png"
+              alt="web development certificate from SheCodes"
+              height="250px"
+            />
+          </div>
+          <div class="col-6">
+            
+            <a
+              href="https://www.virtualbadge.io/certificate-validator?credential=cer-97939315-755d-42cb-b1f1-e122ae65"
+            ><h3>Virtual Assistant</h3></a>
+            <img
+              src="images/Esther Jolomi - Certificate image.png"
+              alt="web development certificate from SheCodes"
+              height="250px"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row"></div>
     </div>
-</a>
+
+    <br />
+    <h2 id="contacts">My contacts</h2>
+
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/esther-jolomi/"
+        ><img
+          src="images/linkedlin logo.png"
+          alt="linkedlin logo"
+          class="linkedin-color"
+      /></a>
+      <a href="https://www.instagram.com/joyinlola/"
+        ><img
+          src="images/instagram logo.png"
+          alt=" instagram logo"
+          class="instagram-color"
+      /></a>
+      <a href="https://twitter.com/esther_yinks"
+        ><img
+          src="images/twitter logo.png"
+          alt="twitter logo"
+          class="twitter-color"
+      /></a>
+      <a href="https://web.facebook.com/joyinlolaesther"
+        ><img
+          src="images/facebook logo.png"
+          alt="facebook logo"
+          class="facebook-"
+      /></a>
+    </div>
   </body>
-
-  <style>
-    body {
-      max-width: 80%;
-      margin: 60px auto;
-      display: block;
-    }
-
-    :root {
-      --primary-color: violet;
-      --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-      --border: 1px solid;
-    }
-
-    .container {
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 96px;
-    }
-
-    h1,
-    h2,
-    p {
-      margin: 0;
-      text-align: center;
-    }
-
-    p {
-      font-size: 24px;
-      opacity: 0.7;
-    }
-
-    h2 {
-      font-weight: bold;
-      font-size: 35px;
-      display: block;
-      margin-block-start: 0.8em;
-      margin-block-end: 0.8em;
-      margin-inline-start: 0;
-      margin-inline-end: 0;
-    }
-
-    .nav-link,
-    a {
-      margin: 10px;
-      border-radius: px;
-      padding: 20px 15px;
-      text-decoration: none;
-      text-transform: capitalize;
-    }
-
-    .nav-link {
-      display: flex;
-      margin-top: 40px;
-      justify-content: center;
-    }
-
-    .contact-link,
-    .about-link {
-      text-align: center;
-      display: flex;
-      margin: 15px;
-
-      border-radius: 10px;
-      border: var(--border);
-      box-shadow: var(--box-shadow);
-      font-size: 15px;
-      font-family: "Times New Roman", Times, serif;
-    }
-    .contact-link {
-      border: 0;
-      background-color: var(--primary-color);
-    }
-
-    .about-link {
-      box-shadow: var(--box-shadow);
-      color: var(--primary-color);
-    }
-
-    .about-col {
-      color: var(--primary-color);
-      border-color: var(--primary-color);
-    }
-
-    .contact-col {
-      color: white;
-    }
-  </style>
 </html>
