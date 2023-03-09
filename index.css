@@ -9,10 +9,10 @@
 .container {
   width: 100%;
   min-height: 100vh;
-  padding-left: 8%;
-  padding-right: 8%;
   box-sizing: border-box;
   overflow: hidden;
+  padding-left: 8%;
+  padding-right: 8%;
 }
 
 .navbar {
@@ -21,10 +21,11 @@
   display: flex;
   flex: 1;
   align-items: center;
-  border: solid;
+  border: hidden;
   padding: 0;
   justify-content: center;
   position: fixed;
+  
 }
 
 .logo {
@@ -44,12 +45,14 @@ nav {
   text-align: right;
   display: block;
   justify-content: center;
+  
 }
 
 nav ul li {
   list-style: none;
   display: inline-block;
   margin-right: 50px;
+  
 }
 
 nav ul li a {
@@ -63,7 +66,9 @@ nav ul li a {
   padding: 1px;
   margin-right: 10px;
   transition: width 0.5s;
+  
 }
+
 
 nav ul li a:hover {
   border: solid;
@@ -196,6 +201,8 @@ button:hover {
   background-color: burlywood;
   border-radius: 100%;
 }
+
+
 
 :root {
   --primary-color: burlywood;
@@ -378,6 +385,7 @@ a {
   #menuList {
     overflow: hidden;
     transition: 0.5s;
+
   }
   .row {
     flex-direction: column-reverse;
