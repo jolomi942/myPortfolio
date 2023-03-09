@@ -22,9 +22,9 @@
   flex: 1;
   align-items: center;
   border: solid;
-  border-color: burlywood;
   padding: 0;
   justify-content: center;
+  position: fixed;
 }
 
 .logo {
@@ -49,19 +49,20 @@ nav {
 nav ul li {
   list-style: none;
   display: inline-block;
-  margin-right: 30px;
+  margin-right: 50px;
 }
 
 nav ul li a {
   text-decoration: none;
   color: burlywood;
   font: 14px;
-  transition: none;
   display: block;
   transition: all 200ms ease-in-out;
   opacity: 0.7;
   border-radius: 10%;
-  padding: 1px 0;
+  padding: 1px;
+  margin-right: 10px;
+  transition: width 0.5s;
 }
 
 nav ul li a:hover {
@@ -69,11 +70,10 @@ nav ul li a:hover {
   border-color: burlywood;
   cursor: pointer;
   height: 18px;
+  color: burlywood;
+  
 }
 
-nav ul li a :hover {
-  color: burlywood;
-}
 .row {
   display: flex;
   justify-content: space-between;
@@ -83,7 +83,6 @@ nav ul li a :hover {
 
 .col-1 {
   flex-basis: 40%;
-  position: relative;
   margin-left: 50px;
 }
 .col-1 h2 {
@@ -129,23 +128,20 @@ button:hover {
   display: flex;
   justify-content: space-between;
 }
-.col-1 ::after {
-  content: "";
-  width: 10px;
-  height: 57px;
-  background: linear-gradient(to right, #fb5283, #ff3527);
-}
 
 .col-2 {
-  position: relative;
   flex-basis: 60%;
   display: flex;
   align-items: center;
 }
+
 .col-2 .controller {
   width: 70%;
   border-radius: 50%;
+  display: flex;
+  margin-top: 50px;
 }
+
 .color-box {
   position: absolute;
   top: 0;
@@ -174,15 +170,7 @@ button:hover {
   cursor: pointer;
   color: burlywood;
 }
-.social-links2 img {
-  height: 600px;
-  width: 100%;
-  margin: 10px;
-  cursor: pointer;
-  color: burlywood;
-  text-align: center;
-  justify-content: center;
-}
+
 .social-links {
   text-align: center;
 }
@@ -207,80 +195,6 @@ button:hover {
   font-size: 20px;
   background-color: burlywood;
   border-radius: 100%;
-}
-
-@media only screen and (max-width: 700px) {
-  nav ul {
-    width: 100%;
-    background-color: rgb(5, 32, 5);
-    position: absolute;
-    top: 75px;
-    z-index: 2;
-  }
-
-  .navbar {
-    width: 50%;
-    border: none;
-    align-items: center;
-    text-align: center;
-  }
-
-  nav ul li {
-    display: block;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
-  nav ul li a {
-    color: burlywood;
-    text-align: center;
-  }
-
-  .menu-icon {
-    width: 50px;
-    cursor: pointer;
-    display: block;
-  }
-  .social-links2 img {
-    height: 200px;
-    margin: 10px;
-    cursor: pointer;
-    color: burlywood;
-    width: 200px;
-  }
-
-  #menuList {
-    overflow: hidden;
-    transition: 0.5s;
-  }
-  .row {
-    flex-direction: column-reverse;
-    margin: 50px 0;
-  }
-  .col-2 {
-    flex-basis: 100%;
-    margin-bottom: 50px;
-  }
-  .col-2 .controller {
-    width: 77%;
-    margin-top: 100px;
-    align-items: center;
-    display: block;
-  }
-  .me {
-    width: 70%;
-  }
-
-  .color-box {
-    transform: translateX(75px);
-  }
-  .col-1 h2 {
-    font: 35px;
-  }
-
-  .col-1 h3 {
-    font: 15px;
-  }
 }
 
 :root {
@@ -392,14 +306,23 @@ a {
 #skills {
   font-size: 40px;
 }
+
+.social-links2 img {
+  display: flex;
+  flex-direction: column;
+  height: 800px;
+  width: 600px;
+  cursor: pointer;
+  color: burlywood;
+  height: 50px;
+  margin: 20px;
+  cursor: pointer;
+
+  text-align: center;
+}
+
 #about {
   font-size: 40px;
-}
-.cert {
-  display: flex;
-  flex-direction: row;
-
-  justify-content: space-evenly;
 }
 
 .text-center .skills-images {
@@ -409,4 +332,92 @@ a {
 }
 .me {
   margin: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+  nav ul {
+    width: 100%;
+    background-color: rgb(5, 32, 5);
+    position: absolute;
+    top: 75px;
+    z-index: 2;
+  }
+
+  .navbar {
+    width: 50%;
+    border: none;
+    align-items: center;
+    text-align: center;
+    position: static;
+  }
+
+  nav ul li {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  nav ul li a {
+    color: burlywood;
+    text-align: center;
+  }
+
+  .menu-icon {
+    width: 50px;
+    cursor: pointer;
+    display: block;
+  }
+  .social-links2 img {
+    height: 200px;
+    margin: 10px;
+    cursor: pointer;
+    color: burlywood;
+    width: 200px;
+  }
+
+  #menuList {
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  .row {
+    flex-direction: column-reverse;
+    margin: 50px 0;
+  }
+  .col-2 {
+    flex-basis: 100%;
+    margin-bottom: 50px;
+  }
+  .col-2 .controller {
+    width: 77%;
+    margin-top: 100px;
+    align-items: center;
+    display: block;
+  }
+  .me {
+    width: 70%;
+  }
+
+  .color-box {
+    transform: translateX(75px);
+  }
+  .col-1 h2 {
+    font: 35px;
+  }
+
+  .col-1 h3 {
+    font: 15px;
+  }
+  .social-links2 img {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    color: burlywood;
+    height: 50px;
+    margin: 20px;
+    cursor: pointer;
+
+    text-align: center;
+  }
 }
